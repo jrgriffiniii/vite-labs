@@ -48,6 +48,12 @@ $ yarn lint
 $ yarn format
 ```
 
+#### running the tests
+
+```bash
+$ yarn test
+```
+
 ### build
 
 ```bash
