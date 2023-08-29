@@ -1,8 +1,5 @@
+import { expect, test } from "vitest";
 
-import {assert} from '@open-wc/testing';
-
-describe('addition', () => {
-  it('results in the sum of two numbers', () => {
-    assert.equal(1 + 1,2);
-  });
+test("adds 1 + 2 to equal 3", () => {
+  expect(3).toBe(3);
 });

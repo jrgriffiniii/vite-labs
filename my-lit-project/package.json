@@ -12,26 +12,24 @@
     "lint": "yarn run lint:lit-analyzer && yarn run lint:eslint",
     "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --write",
     "format:check": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --check",
-    "test": "web-test-runner"
+    "test": "vitest test/"
   },
   "dependencies": {
     "lit": "^2.7.6"
   },
   "devDependencies": {
     "@open-wc/testing": "^3.2.0",
-    "@types/chai": "^4.3.5",
-    "@types/mocha": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
     "@web/dev-server-esbuild": "^0.4.1",
     "@web/dev-server-legacy": "^2.0.1",
     "@web/test-runner": "^0.17.0",
-    "chai": "^4.3.8",
     "eslint": "^8.48.0",
+    "jsdom": "^22.1.0",
     "lit-analyzer": "^1.2.1",
-    "mocha": "^10.2.0",
     "prettier": "^3.0.3",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vitest": "^0.34.3"
   }
 }
