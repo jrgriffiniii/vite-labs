@@ -32,7 +32,20 @@ $ yarn install
 ### development
 
 ```bash
+$ yarn --dev install
 $ yarn dev
+```
+
+#### linting the source code files
+
+```bash
+$ yarn lint
+```
+
+#### formatting the source code files (using Prettier)
+
+```bash
+$ yarn format
 ```
 
 ### build
