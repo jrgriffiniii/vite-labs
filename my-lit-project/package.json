@@ -9,7 +9,9 @@
     "preview": "vite preview",
     "lint:eslint": "eslint 'src/**/*.ts'",
     "lint:lit-analyzer": "lit-analyzer",
-    "lint": "yarn run lint:lit-analyzer && yarn run lint:eslint"
+    "lint": "yarn run lint:lit-analyzer && yarn run lint:eslint",
+    "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --write",
+    "format:check": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --check"
   },
   "dependencies": {
     "lit": "^2.7.6"
@@ -19,6 +21,7 @@
     "@typescript-eslint/parser": "^6.5.0",
     "eslint": "^8.48.0",
     "lit-analyzer": "^1.2.1",
+    "prettier": "^3.0.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   }

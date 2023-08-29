@@ -17,6 +17,11 @@ jobs:
           name: Lint with ESLint
           working_directory: my-lit-project/
           command: yarn lint
+      - run:
+          name: Check formatting using Prettier
+          working_directory: my-lit-project/
+          command: yarn format:check
+
 
   lit-build:
     docker:
