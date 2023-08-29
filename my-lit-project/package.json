@@ -12,7 +12,7 @@
     "lint": "yarn run lint:lit-analyzer && yarn run lint:eslint",
     "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --write",
     "format:check": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --check",
-    "test": "vitest test/"
+    "test": "vitest run --coverage test/"
   },
   "dependencies": {
     "lit": "^2.7.6"
@@ -21,6 +21,7 @@
     "@open-wc/testing": "^3.2.0",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
+    "@vitest/coverage-istanbul": "^0.34.3",
     "@web/dev-server-esbuild": "^0.4.1",
     "@web/dev-server-legacy": "^2.0.1",
     "@web/test-runner": "^0.17.0",
